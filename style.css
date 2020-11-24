@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: black;
+}
+#game {
+    width: 700px;
+    height: 900px;
+    background-color: coral;
+    border: 3px solid rgb(255, 238, 0);
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 575px;
+    bottom: 50px;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 238, 0);
+    border-radius: 50%;
+    position: relative;
+    top: 575px;
+    left: 327px;
+    z-index: 5;
+}
+.blinking {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: blinkingText 1.5s infinite;
+    position: absolute;
+    top: 120px;
+    left: 2%;
+}
+.blinking2 {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: blinkingText 1.5s infinite;
+    position: absolute;
+    top: 160px;
+    left: 2%;
+}
+.blinking3 {
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: blinkingText 1.5s infinite;
+    position: absolute;
+    top: 70px;
+    left: 2%;
+}
+@keyframes blinkingText{
+    0%{     color: yellow;    }
+    49%{    color: coral; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: white;    }
+}
